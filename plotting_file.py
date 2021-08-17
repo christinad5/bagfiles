@@ -23,7 +23,7 @@ def imu_ekf_plots(filename_imu, filename_ekf, title):
     plt.plot(time_ekf, y_ekf, '#FF5852', label="EKF Y Value", linestyle="dotted")
     plt.plot(time_ekf, z_ekf, '#FE9F9C', label="EKF Z Value", linestyle="dashed")
     plt.plot(time_ekf, w_ekf, '#F7D3D2', label="EKF W Value", linestyle="dashdot")
-    plt.legend()
+    plt.legend(fontsize=16)
     plt.show()
 
 
