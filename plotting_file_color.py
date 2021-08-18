@@ -10,7 +10,7 @@ def imu_ekf_plots(filename_imu, filename_ekf, title):
                                                 unpack=True,
                                                 delimiter=",")
 
-    plt.title(title, fontsize=26)
+    plt.title(title, fontsize=25)
     plt.ylabel("Quaternion Values", fontsize=20)
     plt.xlabel("Time [s]", fontsize=20)
     plt.plot(time_imu, x_imu, '#2c03fc', label="Vectornav X Value", linestyle="solid")
@@ -25,4 +25,4 @@ def imu_ekf_plots(filename_imu, filename_ekf, title):
     plt.legend(fontsize=16)
     plt.show()
 
-imu_ekf_plots('lin_acc_static_imu.csv', 'lin_acc_static_ekf.csv', "Static EKF Quaternion Values Compared to Vectornav Callibrated")
+imu_ekf_plots('bias_acc_static_imu.csv', 'bias_acc_static_ekf.csv', "Moving EKF Quaternion Values Compared to Vectornav with Bias and Callibrated")
